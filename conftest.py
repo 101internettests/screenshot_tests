@@ -9,7 +9,7 @@ from config import bot, chat_id
 
 @pytest.hookimpl(trylast=True)
 def pytest_sessionfinish(session, exitstatus):
-    bot.send_message(chat_id, "Проверка связи, скриншотные тесты!")
+    bot.send_message(chat_id, "Проверка связи, скриншотные тесты! Смотри здесь https://101internettests.github.io/screenshot_tests/ ")
 
 
 @pytest.fixture()
