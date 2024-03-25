@@ -1,11 +1,13 @@
 import os
+import telebot
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from dotenv import load_dotenv
 
 load_dotenv()
-
+bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
+chat_id = int(os.getenv("CHAT_ID"))
 host_stage = (os.getenv("HOST_STAGE"))
 host_prod = (os.getenv("HOST_PROD"))
 
