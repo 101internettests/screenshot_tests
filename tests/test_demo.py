@@ -36,6 +36,6 @@ class TestSomePage(ImageProcessor):
         # image_beta.show()
         image_result.show()
 
-        allure.attach(self.image_to_bytes(image_prod), 'actual', allure.attachment_type.PNG)
-        allure.attach(self.image_to_bytes(image_beta), 'expected', allure.attachment_type.PNG)
+        allure.attach(self.image_to_bytes(image_prod), 'prod', allure.attachment_type.PNG)
+        allure.attach(self.image_to_bytes(image_beta), 'stage', allure.attachment_type.PNG)
         allure.attach(self.image_to_bytes(image_result), 'diff', allure.attachment_type.PNG)
