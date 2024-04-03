@@ -85,7 +85,8 @@ jobs:
         uses: actions/upload-artifact@v4.3.1
         with:
           name: allure-result
-          path: allure-result
+          path:
+            allure-result
           retention-days: 2
 
 
